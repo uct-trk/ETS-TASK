@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Favicon-->
+  <link rel="icon" href="//images.ucuzabilet.com/resources/img/icons/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="//images.ucuzabilet.com/resources/img/icons/touch-icon-iphone.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="//images.ucuzabilet.com/resources/img/icons/touch-icon-ipad.png">
+  <link rel="apple-touch-icon" sizes="180x180"
+    href="//images.ucuzabilet.com/resources/img/icons/touch-icon-iphone-retina.png">
+  <link rel="apple-touch-icon" sizes="167x167"
+    href="//images.ucuzabilet.com/resources/img/icons/touch-icon-ipad-retina.png">
+  <!--Favicon-->
+
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <!--Font Awesome-->
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <!--Bootstrap-->
+  <!--FANCYBOX-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <!--FANCYBOX-->
+  <!--JQERY-->
+  <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  <!--JQUERY-->
+  <!--Custom CSS-->
+  <link rel="stylesheet" href="styles/index.css">
+  <!--Custom CSS-->
+
+  <title>Ucuzabilet</title>
+</head>
+
+<body>
+
+  <!--HEADER-->
+  <nav class="navbar navbar-expand-lg header-bg-color py-3">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <img class="logo" src="images/Logo/logo.svg" alt="ETS">
+      </a>
+      <div class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon text-warning"><i class="fas fa-bars fa-2x"></i></span>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-md-3 mb-1 mb-lg-0 mt-lg-0 mt-3">
+          <li class="nav-item me-lg-0 me-4 mb-md-0 mb-3"><a class="nav-link-custom" href="#"><i class="fas fa-fighter-jet"></i> UÇAK</a></li>
+          <li class="nav-item"><a class="nav-link-custom" href="#"><i class="fas fa-hotel"></i> OTEL</a></li>
+        </ul>
+        <ul class="navbar-nav gap-lg-5 gap-md-5 gap-2">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Online İşlemler <i class="fas fa-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Rezervasyon Yap</a></li>
+              <li><a class="dropdown-item" href="#">Kampanya Paketleri</a></li>
+            </ul>
+          </li>
+          <li class="nav-item d-flex"><a type="button" data-toggle="modal" data-target="#exampleModal2"
+              class="nav-link px-0" href="#"><i class="far fa-user"></i> Giriş Yap </a><a class="nav-link"
+              href="#">/</a><a class="nav-link px-0" href="#" role="button" data-toggle="modal"
+              data-target="#exampleModal">Üye Ol</a></li>
+          <li id="" class="nav-item dropdown pe-4">
+            <a class="nav-link dropdown-toggle pb-0 d-flex" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <img class="rounded-circle pb-0 p-0 mx-md-2 flag-dimension" src="images/flags/tr.svg" alt="">
+              <div class="">Tr <i class="fas fa-chevron-down"></i></div>
+            </a>
+            <ul class="dropdown-menu custom-dimension-dropdown w-100" aria-labelledby="navbarDropdown">
+              <li style="cursor: pointer;" class="mb-3">
+                <div class="d-flex justify-content-between  align-items-center">
+                  <img class="rounded-circle flag-dimension pb-0 p-0 mx-2" src="images/flags/gb-eng.svg" alt="">
+                  <div class="country-name me-4">English</div>
+                </div>
+              </li>
+              <li style="cursor: pointer;" class="">
+                <div class="d-flex justify-content-between align-items-center">
+                  <img class="rounded-circle flag-dimension pb-0 p-0 mx-2" src="images/flags/de.svg" alt="">
+                  <div class="country-name me-4">Deutschland</div>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--BREADCRUMB-->
+  <div class="breadcrumb-wrapper">
+    <div class="container">
+      <div class=" d-lg-flex align-items-center justify-content-between pt-4">
+        <div class="d-flex flex-md-row flex-column align-items-md-center align-items-start">
+          <div>
+            <h1 class="breadcrumb-hotel-name">Alaturka Pansiyon</h1>
+          </div>
+          <nav aria-label="breadcrumb" class="bread">
+            <ol class="breadcrumb ms-md-5 ms-0">
+              <li class="breadcrumb-item "><a class="text-secondary text-decoration-none" href="#">Antalya</a></li>
+              <li class="breadcrumb-item "><a class="text-secondary text-decoration-none" href="#">Antalya Otelleri</a>
+              </li>
+              <li class="breadcrumb-item "><a class="text-secondary text-decoration-none" href="#">Kemer Otelleri</a>
+              </li>
+              <li class="breadcrumb-item "><a class="text-secondary text-decoration-none" href="#">Antalya Otelleri</a>
+              </li>
+              <li class="breadcrumb-item text-secondary" aria-current="page">Alaturka Pansiyon</li>
+            </ol>
+          </nav>
+        </div>
+        <div class="d-flex align-items-center gap-5 text-secondary like-share-wrapper mt-lg-0 mt-md-1 mt-2">
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fparse.com" target="_blank" rel="noopener"
+            role="button" class="cursor-pointer text-decoration-none text-secondary"><i
+              class="fas fa-share-alt me-2"></i> Paylaş</a>
+          <div role="button"><i class="far fa-heart me-2"></i> Beğen</div>
+        </div>
+      </div>
+      <span class="breacrumb-mini-location d-lg-block d-flex justify-content-md-end justify-content-start mt-md-0 mt-3">
+        <i class="fas fa-map-marker-alt text-warning me-2 pb-md-5 pb-3"></i> Kemer Göynük,
+        Antalya</span>
+    </div>
+  </div>
+
+
+
+  <!--DESKTOP GRID SLIDER-->
+  <section class="container d-md-block d-none">
+    <div class="row slider-position">
+      <div class=" col-xl-7 col-5">
+        <a data-fancybox="gallery" href="images/slider-images/home-slider-1.jpg"><img class="left-image"
+            src="images/slider-images/home-slider-1.jpg"></a>
+      </div>
+      <div class="col-xl-5 col-7">
+        <div class="row">
+          <div class="col-12">
+            <a data-fancybox="gallery" href="images/slider-images/home-slider-2.jpg">
+              <img class="right-image" src="images/slider-images/home-slider-2.jpg">
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6"> <a data-fancybox="gallery" href="images/slider-images/home-slider-3.jpg"><img
+                class="bottom-image" src="images/slider-images/home-slider-3.jpg"></a></div>
+          <div class="col-6"><a data-fancybox="gallery" href="images/slider-images/home-slider-4.jpg"><img
+                class="bottom-image" src="images/slider-images/home-slider-4.jpg"></a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--CUSTOM MOBILE SLIDER-->
+  <section class="slider d-md-none">
+    <div class="w-100 custom-slider">
+      <div class="slide-item custom-active">
+        <a  data-fancybox="gallery" href="images/room-options/oda-1.jpg">
+          <img src="images/room-options/oda-1.jpg" />
+        </a>
+      </div>
+      <div class="slide-item">
+        <a  data-fancybox="gallery" href="images/room-options/oda-2.jpg">
+          <img src="images/room-options/oda-2.jpg" />
+        </a>
+      </div>
+      <div class="slide-item">
+        <a  data-fancybox="gallery" href="images/room-options/oda-3.jpg">
+          <img src="images/room-options/oda-3.jpg" />
+        </a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="btn-wrap gap-4 d-flex justify-content-center align-items-start mt-2">
+        <button class="prev custom-slide-btn">GERİ</button>
+        <button class="next custom-slide-btn">İLERİ</button>
+      </div>
+    </div>
+  </section>
+
+  <!--TABS-->
+  <section class="container d-md-block d-none">
+    <div class="row mt-3">
+      <div class="col-12">
+        <ul class="tab-list">
+          <li class="d-block">
+            <a href="#room-options" class="tab-link tab-link-active tab-link-active" title="Oda Seçenekleri">Oda
+              Seçenekleri</a>
+          </li>
+          <li class="d-block">
+            <a href="#general-info" class="tab-link" title="Genel Bilgi">Genel Bilgi</a>
+          </li>
+          <li class="d-block">
+            <a href="#hotel-facilities" class="tab-link" title="Oda Seçenekleri">Tesis Olanakları</a>
+          </li>
+          <li class="d-block">
+            <a href="" class="tab-link" title="Oda Seçenekleri">Detaylı Bilgi</a>
+          </li>
+          <li class="d-block">
+            <a href="" class="tab-link" title="Oda Seçenekleri">Yorumlar</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!--TABS MOBILE-->
+  <section class="container mt-3 d-md-none d-block">
+    <div>
+      <button class="otel-details-go" type="button" data-toggle="collapse" data-target="#collapseExample"
+        aria-expanded="false" aria-controls="collapseExample">
+        OTEL ÖZELLİKLERİNİ GÖR
+      </button>
+    </div>
+    <div class="collapse" id="collapseExample">
+      <div class="card card-body">
+        <ul class="tabs-custom-mobile">
+          <li><a href="#room-options">Oda Seçenekleri</a></li>
+          <li><a href="#general-info">Genel Bilgi</a></li>
+          <li><a href="#hotel-facilities">Tesis Olanakları</a></li>
+          <li><a href="#">Yorumlar</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!--FILTER-->
+  <section class="container mt-3 d-md-block d-none">
+    <div class="row align-items-center justify-content-between">
+      <div class="col-lg-4 col-2">
+        <div class="filter-district">Kemer</div>
+        <span class="filter-location">Antalya Türkiye</span>
+      </div>
+      <div class="col-lg-8 col-10  search-filter">
+        <div class="d-flex justify-content-between align-items-lg-start align-items-center">
+          <div role="text" name="daterange" class="filter-date" style="cursor: pointer;">
+            <div id="tarih" class="d-flex align-items-center">
+              <i class="far fa-calendar"></i>
+              <div class="ms-2"><b id="begin">24 Mart 21</b></div>
+            </div>
+            <span id="day">Perşembe</span>
+          </div>
+          <div class="filter-date">
+            <div class="d-flex align-items-center">
+              <i class="far fa-calendar"></i>
+              <div class="ms-2"><b id="end">27 Mart 21</b></div>
+            </div>
+            <span id="last">Perşembe</span>
+          </div>
+          <div class="filter-date filter-days">
+            <i class="far fa-moon text-warning"></i>
+            <div><span id="nigth-count">4</span> gece</div>
+          </div>
+
+          <div class="nav-item dropdown">
+            <div role="button" class="dropdown-toggle d-flex align-items-center" id="navbarDropdown"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <div class="filter-date">
+                <div>
+                  <b id="counter">1 </b><b>Kişi</b>
+                </div>
+                <div>1 Oda</div>
+              </div>
+              <div class="ms-5"><i class="fas fa-chevron-down"></i></div>
+            </div>
+            <ul class="dropdown-menu counter-dropdown" aria-labelledby="navbarDropdown">
+              <li class="">
+                <div class="">
+                  <div class="person-count">Kişi Sayısı</div>
+                  <div class="dropdown-divider"></div>
+
+                  <div class="counter-person">
+                    <button id="inc" class=" flex-grow-1 btn btn-warning flex-grow-1">+</button>
+
+                    <button id="dec" class=" flex-grow-1 btn btn-warning flex-grow-1">-</button>
+                  </div>
+
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="">
+            <button class="search-btn"><b>ARA</b> </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--MOBILE FILTER-->
+
+  <div class="container d-md-none d-block">
+    <button type="button" class="otel-details-go mt-3" data-toggle="modal" data-target="#exampleModal-filter">
+      ARAMA FİLTRESİ
+    </button>
+  </div>
+
+
+
+  <!--General Informations-->
+  <section id="general-info" class="container mt-md-5 mb-md-5 mt-4 mb-4">
+    <h2 class="mb-md-5 mb-4">Genel Bilgi</h2>
+    <div class="row">
+      <div class="col-lg-7 col-12">
+        <div class="row mb-md-4 mb-2">
+          <div class="col-md-6 col-12 mb-md-0 mb-3">
+            <i class="fas fa-globe-europe text-secondary genereal-info-icon"></i>
+            <span class="ms-4 genereal-info-text">Çocuk Dostu</span>
+          </div>
+          <div class="col-md-6 col-12 mb-md-0 mb-3">
+            <i class="fas fa-umbrella-beach text-secondary genereal-info-icon"></i>
+            <span class="ms-4 genereal-info-text">Denizi Kum</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-12 mb-md-0 mb-3">
+            <i class="fas fa-water text-secondary genereal-info-icon"></i>
+            <span class="ms-4 genereal-info-text">Özel Plaj</span>
+          </div>
+          <div class="col-md-6 col-12 mb-md-0 mb-3">
+            <i class="fas fa-certificate text-secondary genereal-info-icon"></i>
+            <span class="ms-4 genereal-info-text">Güvenli Turizm Sertifikalı Otel</span>
+          </div>
+        </div>
+        <article class="general-info-text mt-md-5 mt-3">
+          <p>Konum, haritalar ve otelin genel alanlara mesafesi mümkün olduğunca bilgi sunmak içindir. Bu bilgilerin
+            kesinliği konusunda herhangi bir sorumluluk kabul edilmez. En güncel tam yerleşim bilgileri ve
+            yönlendirmelerini temin etmek için doğrudan otel ile iletişime geçilmesi yolcunun kendi sorumluluğundadır.
+            Rezervasyonu yapan kişi otelde konaklayacak tüm kişilerin isimlerini doğru bir şekilde girmekle yükümlüdür.
+            Rezervasyonunuzu yaparken doğru e-posta adresinin ve transferler için doğru cep telefonu numarasının
+            girildiğinden emin olmak kişinin sorumluluğundadır.
+            <br><br>
+            Tesislerin konsept dahilinde sunduğu hizmetler ve bazı hizmet alanlarının kullanımı, Covid-19 kapsamında
+            çıkan genelgeler ve yasal düzenlemelere göre konaklama süresince sınırlandırılmış ya da kapatılmış olabilir.
+            Bazı hizmetler ise kısmen veya tamamen sunulamayabilir.
+            <br><br>
+            Rezervasyon yapan tüm misafirler; başta tesis, Sağlık Bakanlığı, yerel kurumlar/otoriteler olmak üzere,
+            ilgili kurumların Covid-19 ile ilgili olarak aldığı tüm tedbirlere uymak ve bu tedbirler kapsamında; başta
+            HES Kodu olmak üzere kendilerinden talep edilen tüm bilgileri tesise vermek zorundadır. Tedbirlere uymayan
+            misafirlere sunulacak bazı hizmetler sonlandırılabilir. Misafirlerin Covid-19 kapsamında alınan önlemlere
+            uymaması halinde yaşanacak olumsuz durumlardan tesis ve ya Etstur sorumlu değildir.
+          </p>
+        </article>
+      </div>
+      <div class="offset-xl-1 offset-0 col-xl-4 col-lg-5 col-12 ">
+        <div class="d-flex flex-column align-items-end h-100">
+          <div class="d-flex align-items-center certificate">
+            <i class="fas fa-check-circle text-warning me-2"></i>
+            <div>Güvenli Turizm Sertifikalı Tesis ©</div>
+          </div>
+          <div class="w-100 h-100">
+            <iframe class="w-100 h-100"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3211.8185997216583!2d30.45792101527829!3d36.389385180035184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c236ea43243e19%3A0x6e0f980171e65023!2sOlympos%20Alaturka%20Pansiyon!5e0!3m2!1str!2str!4v1639943861808!5m2!1str!2str"
+              style="border:0; border-radius: 3px; width: 100%;" allowfullscreen="true" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--ROOM OPTIONS-->
+  <section id="room-options" class="container">
+    <h2>Oda Seçenekleri</h2>
+    <!--ROOM 1-->
+    <div class="row mt-md-5 mt-3 p-3 room-options-wrapper">
+      <div class="col-lg-2 col-12 p-0">
+        <figure class="overflow-hidden room-options-photo-wrapper">
+          <img class="room-options-photo" src="images/room-options/oda-1.jpg" alt="">
+        </figure>
+      </div>
+      <div class="col-lg-10 col-12">
+        <h4 class="ms-md-3 ms-0 mt-md-0 mt-3">Süperior Kara Manzaralı</h4>
+        <div class="row room-height mt-3">
+          <div class="col-md-4 col-12">
+            <div class="d-flex flex-md-column flex-row justify-content-between ms-md-3 ms-0 h-100">
+              <div class="">
+                <div class="d-flex align-items-center mb-md-3 mb-2 room-options-text">
+                  <i class="fas fa-bed text-warning me-3"></i>
+                  <div>Çift kişilik ve geniş yatak</div>
+                </div>
+                <div class="d-flex align-items-center  mb-md-3 mb-2 room-options-text">
+                  <i class="fas fa-users text-warning me-3"></i>
+                  <div>3 kişilik</div>
+                </div>
+                <div class="d-flex align-items-center room-options-text">
+                  <i class="fas fa-wifi text-warning me-3"></i>
+                  <div>İnternet</div>
+                </div>
+              </div>
+              <div class="room-detail-btn-wrapper" type="button" data-toggle="modal" data-target="#exampleModalCenter">
+                <button>Detaylı Oda Bilgisi <i class="fas fa-arrow-right ms-2 text-warning"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-6">
+            <div class="mt-md-0 mt-4">
+              <div class="d-flex align-items-center room-options-text mb-md-4 mb-2">
+                <i class="fas fa-egg text-warning me-3"></i>
+                <div>Türk Kahvaltısı</div>
+              </div>
+              <div class="d-flex align-items-center room-options-text mb-md-4 mb-2">
+                <i class="fas fa-baby text-warning me-3"></i>
+                <div>0 - 4 Yaş Çocuk Ücretsiz</div>
+              </div>
+              <div class="d-flex align-items-center room-options-text">
+                <i class="fas fa-power-off text-warning me-3"></i>
+                <div>Ücretsiz İptal</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6 text-end">
+            <div class="mt-md-5 mt-4">
+              <span class="total-nigth">3 Gece için Toplam</span>
+              <div class="room-options-price">1.900 TL</div>
+              <div>
+                <button class="choice-room">ODAYI SEÇ</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--ROOM 2-->
+    <div class="row mt-md-5 mt-3 p-3 room-options-wrapper">
+      <div class="col-lg-2 col-12 p-0">
+        <figure class="overflow-hidden room-options-photo-wrapper">
+          <img class="room-options-photo" src="images/room-options/oda-2.jpg" alt="">
+        </figure>
+      </div>
+      <div class="col-lg-10 col-12">
+        <h4 class="ms-md-3 ms-0 mt-md-0 mt-3">Süperior Kara Manzaralı</h4>
+        <div class="row room-height mt-3">
+          <div class="col-md-4 col-12">
+            <div class="d-flex flex-md-column flex-row justify-content-between ms-md-3 ms-0 h-100">
+              <div class="">
+                <div class="d-flex align-items-center mb-md-3 mb-2 room-options-text">
+                  <i class="fas fa-bed text-warning me-3"></i>
+                  <div>Çift kişilik ve geniş yatak</div>
+                </div>
+                <div class="d-flex align-items-center  mb-md-3 mb-2 room-options-text">
+                  <i class="fas fa-users text-warning me-3"></i>
+                  <div>3 kişilik</div>
+                </div>
+                <div class="d-flex align-items-center room-options-text">
+                  <i class="fas fa-wifi text-warning me-3"></i>
+                  <div>İnternet</div>
+                </div>
+              </div>
+              <div class="room-detail-btn-wrapper" type="button" data-toggle="modal" data-target="#exampleModalCenter">
+                <button>Detaylı Oda Bilgisi <i class="fas fa-arrow-right ms-2 text-warning"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-6">
+            <div class="mt-md-0 mt-4">
+              <div class="d-flex align-items-center room-options-text mb-md-4 mb-2">
+                <i class="fas fa-egg text-warning me-3"></i>
+                <div>Türk Kahvaltısı</div>
+              </div>
+              <div class="d-flex align-items-center room-options-text mb-md-4 mb-2">
+                <i class="fas fa-baby text-warning me-3"></i>
+                <div>0 - 4 Yaş Çocuk Ücretsiz</div>
+              </div>
+              <div class="d-flex align-items-center room-options-text">
+                <i class="fas fa-power-off text-warning me-3"></i>
+                <div>Ücretsiz İptal</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6 text-end">
+            <div class="mt-md-5 mt-4">
+              <span class="total-nigth">3 Gece için Toplam</span>
+              <div class="room-options-price">1.900 TL</div>
+              <div>
+                <button class="choice-room">ODAYI SEÇ</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--ROOM 3-->
+    <div class="row mt-md-5 mt-3 p-3 room-options-wrapper">
+      <div class="col-lg-2 col-12 p-0">
+        <figure class="overflow-hidden room-options-photo-wrapper">
+          <img class="room-options-photo" src="images/room-options/oda-3.jpg" alt="">
+        </figure>
+      </div>
+      <div class="col-lg-10 col-12">
+        <h4 class="ms-md-3 ms-0 mt-md-0 mt-3">Süperior Kara Manzaralı</h4>
+        <div class="row room-height mt-3">
+          <div class="col-md-4 col-12">
+            <div class="d-flex flex-md-column flex-row justify-content-between ms-md-3 ms-0 h-100">
+              <div class="">
+                <div class="d-flex align-items-center mb-md-3 mb-2 room-options-text">
+                  <i class="fas fa-bed text-warning me-3"></i>
+                  <div>Çift kişilik ve geniş yatak</div>
+                </div>
+                <div class="d-flex align-items-center  mb-md-3 mb-2 room-options-text">
+                  <i class="fas fa-users text-warning me-3"></i>
+                  <div>3 kişilik</div>
+                </div>
+                <div class="d-flex align-items-center room-options-text">
+                  <i class="fas fa-wifi text-warning me-3"></i>
+                  <div>İnternet</div>
+                </div>
+              </div>
+              <div class="room-detail-btn-wrapper" type="button" data-toggle="modal" data-target="#exampleModalCenter">
+                <button>Detaylı Oda Bilgisi <i class="fas fa-arrow-right ms-2 text-warning"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-6">
+            <div class="mt-md-0 mt-4">
+              <div class="d-flex align-items-center room-options-text mb-md-4 mb-2">
+                <i class="fas fa-egg text-warning me-3"></i>
+                <div>Türk Kahvaltısı</div>
+              </div>
+              <div class="d-flex align-items-center room-options-text mb-md-4 mb-2">
+                <i class="fas fa-baby text-warning me-3"></i>
+                <div>0 - 4 Yaş Çocuk Ücretsiz</div>
+              </div>
+              <div class="d-flex align-items-center room-options-text">
+                <i class="fas fa-power-off text-warning me-3"></i>
+                <div>Ücretsiz İptal</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6 text-end">
+            <div class="mt-md-5 mt-4">
+              <span class="total-nigth">3 Gece için Toplam</span>
+              <div class="room-options-price">1.900 TL</div>
+              <div>
+                <button class="choice-room">ODAYI SEÇ</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Hotel Facilities-->
+  <section id="hotel-facilities" class="container my-md-5 my-4">
+    <div class="d-md-flex d-block justify-content-between gap-5">
+      <div class="active-custom">
+        <a class="clickable-custom panel-collapsed"><i class="fas fa-vector-square text-warning"></i> <i
+            class="fas fa-chevron-down text-secondary"></i></a>
+        <ul class="collapsein-custom">
+          <li class="py-2 text-uppercase collapse-title">BÜYÜKLÜK BİLGİSİ</li>
+          <li class="colapse-text">Olimpos’un yemyeşil doğasıyla uyumlu ahşap odalarında misafirlerini ağırlayan Acar
+            Pansiyon, yemyeşil bahçesi, açık havuzu, kahvaltı ve akşam yemeği servisi ile misafirlerini Antalya’da deniz
+            ve güneşle buluşturuyor.</li>
+        </ul>
+      </div>
+      <div class="active-custom">
+        <a class="clickable-custom panel-collapsed"><i class="fas fa-swimmer text-warning"></i> <i
+            class="fas fa-chevron-down text-secondary"></i></a>
+        <ul class="collapsein-custom">
+          <li class="py-2 text-uppercase collapse-title">DENİZ&HAVUZ</li>
+          <li class="colapse-text">Kum Plaj</li>
+          <li class="colapse-text">Özel Kum Plaj</li>
+          <li class="colapse-text">Açık Havuz</li>
+          <li class="colapse-text">Kapalı Havuz</li>
+          <li class="colapse-text">Çocuk Havuzu</li>
+          <li class="colapse-text">Kapalı Çocuk Havuzu</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="d-md-flex d-block justify-content-between gap-5 mt-md-5 mt-0">
+      <div class="active-custom">
+        <a class="clickable-custom panel-collapsed"><i class="fas fa-gem text-warning"></i> <i
+            class="fas fa-chevron-down text-secondary"></i></a>
+        <ul class="collapsein-custom">
+          <li class="py-2 text-uppercase collapse-title">BALAYI</li>
+          <li class="colapse-text">Balayı çift odası</li>
+          <li class="colapse-text">Çiftler için özel içecekler</li>
+          <li class="colapse-text">Rezerve yemek masası</li>
+          <li class="colapse-text">Sınırsız alkollü içecek</li>
+          <li class="colapse-text">Giriş gününüze özel odaya ikramlar</li>
+          <li class="colapse-text">Deniz ve havuz manzaralı odalar</li>
+        </ul>
+      </div>
+      <div class="active-custom">
+        <a class="clickable-custom panel-collapsed"><i class="fas fa-utensils text-warning"></i> <i
+            class="fas fa-chevron-down text-secondary"></i></a>
+        <ul class="collapsein-custom">
+          <li class="py-2 text-uppercase collapse-title">YEME&İÇME</li>
+          <li><span class="collapse-time">07:00-10:00</span> <span class="colapse-text ms-3">Kahvaltı</span></li>
+          <li><span class="collapse-time">10:00-11:00</span> <span class="colapse-text ms-3">Geç Kahvaltı</span></li>
+          <li><span class="collapse-time">11:00-12:00</span> <span class="colapse-text ms-3">Kahve Servisi</span></li>
+          <li><span class="collapse-time">12:00-16:00</span> <span class="colapse-text ms-3">Atıştırma</span></li>
+          <li><span class="collapse-time">13:00-14:00</span> <span class="colapse-text ms-3">Dondurma</span></li>
+          <li><span class="collapse-time">14:00-15:30</span> <span class="colapse-text ms-3">Öğle Yemeği</span></li>
+          <li><span class="collapse-time">16:00-18:00</span> <span class="colapse-text ms-3">Meyve Servisi</span></li>
+          <li><span class="collapse-time">19:00-20:30</span> <span class="colapse-text ms-3">Akşam Yemeği</span></li>
+          <li><span class="collapse-time">21:00-23:00</span> <span class="colapse-text ms-3">İçecek İkramı</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <!--MOBILE FILTER MODAL-->
+  <div class="modal fade" id="exampleModal-filter" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">ARAMA VE FİLTRELEME</h5>
+          <div class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fas fa-times fa-2x text-warning"></i></span>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="d-flex align-items-center">
+              <div class="filter-district me-3">Kemer</div>
+              <span class="filter-location">Antalya Türkiye</span>
+            </div>
+            <div class="col-12  search-filter">
+              <div class="d-flex flex-column justify-content-between align-items-lg-start align-items-center">
+                <div class="d-flex justify-content-between align-items-center mt-3 w-100">
+                  <div role="text" name="daterange-a" class="filter-date" style="cursor: pointer;">
+                    <div id="tarih" class="d-flex align-items-center">
+                      <i class="far fa-calendar"></i>
+                      <div class="ms-2"><b id="begin1">24 Mart 21</b></div>
+                    </div>
+                    <span id="day1">Perşembe</span>
+                  </div>
+                  <div class="filter-date">
+                    <div class="d-flex align-items-center">
+                      <i class="far fa-calendar"></i>
+                      <div class="ms-2"><b id="end1">27 Mart 21</b></div>
+                    </div>
+                    <span id="last1">Perşembe</span>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between w-100 mt-5">
+                  <div class="filter-date filter-days">
+                    <i class="far fa-moon text-warning"></i>
+                    <div><span id="nigth-count1">4</span> gece</div>
+                  </div>
+                  <div class="nav-item dropdown">
+                    <div role="button" class="dropdown-toggle d-flex align-items-center" id="navbarDropdown"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      <div class="filter-date">
+                        <div>
+                          <b id="counter1">1 </b><b>Kişi</b>
+                        </div>
+                        <div>1 Oda</div>
+                      </div>
+                      <div class="ms-5"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <ul class="dropdown-menu counter-dropdown1" aria-labelledby="navbarDropdown">
+                      <li class="">
+                        <div class="">
+                          <div class="person-count">Kişi Sayısı</div>
+                          <div class="dropdown-divider"></div>
+                          <div class="counter-person">
+                            <button id="inc1" class=" flex-grow-1 btn btn-warning flex-grow-1">+</button>
+
+                            <button id="dec1" class=" flex-grow-1 btn btn-warning flex-grow-1">-</button>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="">
+                    <button data-dismiss="modal" class="search-btn"><b>ARA</b> </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--SIGN IN MODAL-->
+  <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">GİRİŞ YAP</h5>
+          <button type="button" class="close btn" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fas fa-times fa-2x text-warning"></i></span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="card" style="width: 100%;">
+            <img class="card-img-top"
+              src="https://images.ucuzabilet.com/definitions/campaign/ad%C4%B1yaman_20211222121518.jpg"
+              alt="Card image cap">
+            <div class="card-body">
+              <form>
+                <div class="form-group mb-3">
+                  <label for="exampleFormControlInput1">Email</label>
+                  <input type="email" class="form-control btn-outline-warning text-dark bg-white"
+                    id="exampleFormControlInput1" placeholder="E-mail adresiniz">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Şifre</label>
+                  <input type="password" class="form-control btn-outline-warning text-dark bg-white"
+                    id="exampleFormControlInput1" placeholder="Şifreniz">
+                </div>
+
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-warning text-white" data-dismiss="modal">GİRİŞ YAP</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--SIGN UP MODAL-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">ÜYE OL</h5>
+          <button type="button" class="close btn" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fas fa-times fa-2x text-warning"></i></span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="card" style="width: 100%;">
+            <img class="card-img-top"
+              src="https://images.ucuzabilet.com/definitions/campaign/yilbasisallauc_20211220154212.jpg"
+              alt="Card image cap">
+            <div class="card-body">
+              <form>
+                <div class="form-group mb-3">
+                  <label for="exampleFormControlInput1">Email</label>
+                  <input type="email" class="form-control btn-outline-warning text-dark bg-white"
+                    id="exampleFormControlInput1" placeholder="E-mail adresiniz">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Şifre</label>
+                  <input type="password" class="form-control btn-outline-warning text-dark bg-white"
+                    id="exampleFormControlInput1" placeholder="Şifreniz">
+                </div>
+
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-warning text-white" data-dismiss="modal">ÜYE OL</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--ROOM MODAL-->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Alaturka Pansiyon</h5>
+          <button type="button" class="close btn" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fas fa-times fa-2x text-warning"></i></span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="card" style="width: 100%;">
+            <img class="card-img-top" src="images/room-options/oda-1.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Oda Olanakları</h5>
+              <p class="card-text">Tesislerin konsept dahilinde sunduğu hizmetler ve bazı hizmet alanlarının kullanımı,
+                Covid-19 kapsamında çıkan genelgeler ve yasal düzenlemelere göre konaklama süresince sınırlandırılmış ya
+                da kapatılmış olabilir. Bazı hizmetler ise kısmen veya tamamen sunulamayabilir.</p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-warning text-white" data-dismiss="modal">Tamam</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!--FANCYBOX-->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+  <!--BOOTSTRAP-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <!--CUSTOM JS-->
+
+  <!--DATE RANGE-->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+  <!--CUSTOM-->
+  <script src="scripts.js"></script>
+  <script>
+    $('.counter-dropdown1').click(function (e) {
+      e.stopPropagation();
+    })
+    let counter1 = document.getElementById('counter1');
+    let inc1 = document.getElementById("inc1")
+    let dec1 = document.getElementById("dec1")
+    let count1 = 1
+    inc1.addEventListener("click", () => {
+      count1++
+      counter1.innerHTML = count1
+    })
+    dec1.addEventListener("click", () => {
+      let a = counter1.innerHTML
+      if (a == 1) {
+        count1 = a
+      } else {
+        count1--
+      }
+      counter1.innerHTML = count1
+    });
+
+
+    // date arrange
+    let basla1 = document.getElementById("begin1")
+    let bitir1 = document.getElementById("end1")
+    let gece1 = document.getElementById("nigth-count1")
+    let day1 = document.getElementById("day1")
+    last1 = document.getElementById("last1")
+    let one_day1 = 1000 * 60 * 60 * 24;
+
+    $(function () {
+      $('div[name="daterange-a"]').daterangepicker({
+        opens: 'left',
+        format: "mm/dd/yyyy",
+
+      }, function (start, end, label) {
+        basla1.innerText = start.format('YYYY-MM-DD');
+        bitir1.innerText = end.format('YYYY-MM-DD');
+        gece1.innerText = Math.floor((end - start) / one_day1);
+        day1.innerText = start.format("dd")
+        last1.innerText = end.format("dd")
+
+      });
+    });
+  </script>
+</body>
+
+</html>
